@@ -24,11 +24,11 @@ jobs:
       # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
       run: sudo apt-get update && sudo apt-get install libboost-test-dev -y    
     
-    - name: Build
+    #- name: Build
       # Build your program with the given configuration
-      run: cmake --build . 
-           cmake --build . --target test
-           cmake --build . --target package
+    - run: cmake --build . 
+    - run: cmake --build . --target test
+    - run: cmake --build . --target package
 
     - name: Make release
       id: make_release
