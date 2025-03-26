@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+      - changeYml
       - feature/github_actions
  # pull_request:
   #  branches: [ main ]
