@@ -27,8 +27,8 @@ jobs:
     - name: Build
       # Build your program with the given configuration
       run: cmake --build . 
-           && cmake --build . --target test
-           && cmake --build . --target package
+           cmake --build . --target test
+           cmake --build . --target package
 
     - name: Make release
       id: make_release
